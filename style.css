@@ -1,0 +1,45 @@
+.nav-item button {
+    background-color: gold; 
+    margin-left: 100px;
+    margin-top: 5px;
+    color: #ffffff;
+    border: 2px solid gold; 
+    border-radius: 10px; 
+    text-shadow: 0px 0px 10px gold; 
+  }
+  
+  .nav-item{
+    margin-bottom: 10px;
+  
+   }
+   .dropdown-item{
+    display: flex;
+   background-color: rgba(255, 217, 0, 0.645);
+   margin-top: 10px;
+  
+  .navbar-item{
+  color: white
+  }
+  
+   }
+  
+  
+  
+   .nav-link{
+    margin-right: 10px;
+  
+   }
+  
+   .nav-item button:hover {
+    box-shadow: 0px 0px 15px #fcf6bd; 
+  }
+  
+    body {
+      background: rgb(255, 191, 15);
+  
+      background: linear-gradient(90deg, rgb(238, 203, 5) 0%, hsla(58, 100%, 68%, 1) 100%);
+      
+  
+    }
+  
+  
