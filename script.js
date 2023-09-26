@@ -3,9 +3,11 @@ const mongodb = require('mongodb');
 const port = 4444;
 const server = express();
 
+
+
 server.get('/', (req, res) => {
-    res.render('/index.html')
-   });
+    res.sendFile(__dirname + '/index.html');
+});
 
 
 
@@ -38,3 +40,5 @@ server.listen(port, () => {
     console.log(`El servidor aun no está funcionando en http://localhost:${port}/`);
   });
 
+
+  

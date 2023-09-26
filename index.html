@@ -9,12 +9,40 @@
     <title>Golden Web</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </head>
+  <body>
+       <audio id="backgroundAudio" autoplay loop>
+      <source src="./sonido/musicadefondo.wav" type="audio/wav">
+      <!-- Si quieres soporte para diferentes formatos de audio, puedes añadir más sources aquí -->
+
+      <div id="volumeControl">
+        <input type="range" min="0" max="1" step="0.1" value="0.5" id="volumeSlider">
+    </div>
+
+  </audio>
+  
+  <script src="script.js"></script>
+ 
   <body class="p-3 m-0 border-0 bd-example m-0 border-0">
 
     
     <nav class="navbar navbar-dark bg-dark fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Golden Web</a>
+     
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <button class="nav-link active" aria-current="page" href="#">Inicio</button>
+            
+            
+        </ul>
+        
+      </li>
+      </ul>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item nav-item2">
+            <button class="nav-link active" aria-current="page" href="#">GoldenWiki</button>
+            
+        </ul>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -25,46 +53,45 @@
           </div>
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              <li class="nav-item ">
+                <a class="nav-link active" aria-current="page" href="#">Datos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">¿Quien soy?</a>
-                <a class="nav-link" href="#">Funciones y futuras actualizaciones</a>
+                <button class="nav-link" href="#">¿Quien soy?</button>
+                <button class="nav-link" href="#">Funciones y futuras actualizaciones</button>
               </li>
                <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Historia</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Comics</a>
-          <a class="nav-link" href="#">Cartas de los personajes</a>
+          <button class="nav-link" href="#">Comics</button>
+          <button class="nav-link" href="#">Cartas de los personajes</button>
         </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        
         </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <button class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Dropdown
-                </a>
+                </button>
                 <ul class="dropdown-menu dropdown-menu-dark">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><button class="dropdown-item" href="#">Action</button></li>
+                  <li><button class="dropdown-item" href="#">Another action</button></li>
                   <li>
                     <hr class="dropdown-divider">
                   </li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><button class="dropdown-item" href="#">Something else here</button></li>
                 </ul>
               </li>
             </ul>
             <form class="d-flex mt-3" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-success" type="submit">Buscar lo que nunca encontraras...</button>
+              <button class="btn btn-warning" type="submit">Search</button>
             </form>
           </div>
         </div>
       </div>
     </nav>
     
-    <!-- End Example Code -->
+    
   </body>
 </html>
