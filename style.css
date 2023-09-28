@@ -12,13 +12,23 @@
 
 
 
-  #frankiCard {
+  #cardFranki {
     display: none;
     
   align-items: center;
   justify-content: center;
 
   }
+
+  #cardRonin {
+    display: none;
+    
+  align-items: center;
+  justify-content: center;
+
+  }
+
+  
 
 
 
