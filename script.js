@@ -1,44 +1,28 @@
-const express = require('express');
-const mongodb = require('mongodb');
-const port = 4444;
-const server = express();
+const { MongoClient, ServerApiVersion } = require("mongodb");
+const uri =
+    "mongodb+srv://frangamerdemon:<queopinasdelarazaariaperonista4444>@francluster.zudsgju.mongodb.net/?retryWrites=true&w=majority";
 
-
-
-server.get('/', (req, res) => {
-    res.sendFile(__dirname + '/index.html');
+// Create a MongoClient with a MongoClientOptions object to set the Stable API version
+const client = new MongoClient(uri, {
+    serverApi: {
+        version: ServerApiVersion.v1,
+        strict: true,
+        deprecationErrors: true,
+    },
 });
 
-
-
-server.get('/Saludo1', (req, res) => {
-     console.log("holaaaa")
-    });
-console.log('vos: hola mundo')
-
-
-
-server.post('/Saludo2', (req, res) => {
-    console.log("holaaaa que tal usuario?")
-    
-   })
-console.log('mundo: hola usuariooo');
-
-
-server.get('/Saludo1', (req, res) => {
-    console.log("holaaaa")
-   });
-console.log('vos: como estas?')
-
-
-server.post('/Saludo2', (req, res) => {
-    console.log("holaaaa que tal usuario?")
-   })
-console.log('mundo: muy FRENETICO');
-
-server.listen(port, () => {
-    console.log(`El servidor aun no está funcionando en http://localhost:${port}/`);
-  });
-
-
-  
+async function run() {
+    try {
+        // Connect the client to the server	(optional starting in v4.7)
+        await client.connect();
+        // Send a ping to confirm a successful connection
+        await client.db("admin").command({ ping: 1 });
+        console.log(
+            "Pinged your deployment. You successfully connected to MongoDB!"
+        );
+    } finally {
+        // Ensures that the client will close when you finish/error
+        await client.close();
+    }
+}
+run().catch(console.dir);
