@@ -7,7 +7,7 @@
 
     background: linear-gradient(
         90deg,
-        rgb(81, 14, 117) 50%,
+        rgb(40, 5, 59) 30%,
         rgb(172, 1, 252) 100%
     );
 }
@@ -15,14 +15,21 @@
 .agrega {
     height: 60px;
     width: 200px;
-    background-color: rgb(74, 0, 131);
+    background: linear-gradient(
+        90deg,
+        rgb(81, 14, 117) 50%,
+        rgb(172, 1, 252) 100%
+    );
     margin-left: 50px;
     margin-top: 5px;
     color: #ae00ff;
-    border: 2px solid rgb(144, 0, 255);
+    border: 2px solid rgb(180, 89, 249);
     border-radius: 10px;
-    text-shadow: 0px 0px 10px rgb(93, 0, 255);
-    box-shadow: 0px 0px 15px #faf1a3;
+    text-shadow: 0px 0px 10px rgb(62, 1, 168);
+}
+
+.agrega:hover {
+    box-shadow: 0px 0px 15px #dda3fa;
 }
 
 .nav-item button {
