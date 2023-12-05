@@ -136,12 +136,50 @@
     </div>
 
     <div class="container">
-    <button class="agrega">Agregar nota</button>
+      <button  class="Agrega"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        Añadir Nota
+      </button>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">¡Crea tu nota!</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <!-- Contenido del modal con identificadores en los campos de entrada -->
+<div class="modal-body">
+  ¡Escriba lo que quiera!
+  <div class="input-group">
+      <input type="text" class="form-control" id="inputNota" placeholder="Nota" aria-label="Recipient's username with two button addons">
+  </div>
+
+  ¡Introduzca una fecha!
+  <div class="input-group">
+      <input type="text" class="form-control" id="inputFecha" placeholder="Fecha" aria-label="Recipient's username with two button addons">
+  </div>
+
+  ¡Introduzca una hora!
+  <div class="input-group">
+      <input type="text" class="form-control" id="inputHora" placeholder="Hora" aria-label="Recipient's username with two button addons">
+  </div>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+  <button type="button" class="btn btn-primary" onclick="GuardarDatos()">Crear</button>
+</div>
+
+            </div>
+          </div>
+        </div>
+      </div>
 
     
     </div>
 
     <script src="script.js"></script>
     <script src="/Controllers/Spawn.js"></script>
+    <script src="/Controllers/GuardarDatos.js"></script>
   </body>
 </html>

@@ -12,7 +12,7 @@
     );
 }
 
-.agrega {
+.Agrega {
     height: 60px;
     width: 200px;
     background: linear-gradient(
@@ -28,7 +28,7 @@
     text-shadow: 0px 0px 10px rgb(62, 1, 168);
 }
 
-.agrega:hover {
+.Agrega:hover {
     box-shadow: 0px 0px 15px #dda3fa;
 }
 
