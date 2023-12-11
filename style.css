@@ -12,6 +12,76 @@
     );
 }
 
+.modal-backdrop{
+    background: rgb(243, 239, 20);
+
+    background: linear-gradient(
+        90deg,
+        rgb(40, 5, 59) 30%,
+        rgb(172, 1, 252) 100%
+    );
+}
+
+.button{
+    height: 60px;
+    width: 200px;
+    background: linear-gradient(
+        90deg,
+        rgb(102, 117, 14) 50%,
+        rgb(206, 252, 1) 100%
+    );
+    margin-left: 50px;
+    margin-top: 5px;
+    color: #d9ff00;
+    border: 2px solid rgb(246, 249, 89);
+    border-radius: 10px;
+    text-shadow: 0px 0px 10px rgb(168, 151, 1);
+
+
+}
+
+.button:hover{
+    box-shadow: 0px 2px 25px #eafaa3;
+}
+
+.buttonn:hover{
+    box-shadow: 0px 2px 25px #adfaa3;
+}
+
+.buttonn{
+    height: 60px;
+    width: 200px;
+    background: linear-gradient(
+        90deg,
+        rgb(14, 117, 69) 50%,
+        rgb(1, 252, 85) 100%
+    );
+    margin-left: 50px;
+    margin-top: 5px;
+    color: #00ff15;
+    border: 2px solid rgb(89, 249, 156);
+    border-radius: 10px;
+    text-shadow: 0px 0px 10px rgb(1, 168, 146);
+
+
+    
+}
+
+
+
+.modal-content{
+    background: rgb(243, 239, 20);
+
+    background: linear-gradient(
+        90deg,
+        rgb(40, 5, 59) 30%,
+        rgb(172, 1, 252) 80%
+    );
+ }
+
+
+
+
 .Agrega {
     height: 60px;
     width: 200px;

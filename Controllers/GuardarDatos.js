@@ -1,11 +1,13 @@
 function GuardarDatos() {
     // Obtener los valores de los campos de entrada
-    const nota = document.getElementById("inputNota").value;
-    const fecha = document.getElementById("inputFecha").value;
-    const hora = document.getElementById("inputHora").value;
+    const Titulo = document.getElementById("inputTitulo").value;
+    const Nota = document.getElementById("inputNota").value;
+    const hora = document.getElementById("inputHorayfecha").value;
 
+    display = block ("staticBackdrop")
     // Imprimir en la consola los datos recopilados
-    console.log("Nota:", nota);
-    console.log("Fecha:", fecha);
-    console.log("Hora:", hora);
+    console.log("Titulo:", Titulo);
+    console.log("Nota:", Nota);
+    console.log("Fecha y Hora:", hora);
 }
+
