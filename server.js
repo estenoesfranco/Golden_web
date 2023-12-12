@@ -5,7 +5,7 @@ const Schema = mongoose.Schema;
 const port = 3000;
 const Schema4444 = require("./Controllers/information");
 // Conexión a MongoDB
-mongoose.connect("mongodb+srv://frangamerdemon:queopinasdelarazaariaperonista4444@francluster.zudsgju.mongodb.net/?retryWrites=true&w=majority", {
+mongoose.connect("mongodb+srv://frangamerdemon:queopinasdelarazaariaperonista4444@Francluster.zudsgju.mongodb.net/?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 });
@@ -29,8 +29,8 @@ app.get('/', async (req, res) =>{
 app.post('/', async (req, res) => {
   try {
       console.log("Recibiendo solicitud POST:", req.body);
-      const nuevoEjemplo = new EjemploModel(req.body);
-      const resultado = await nuevoEjemplo.save();
+      const nuevoSchema = new Schema4444(req.body);
+      const resultado = await nuevoSchema.save();
       console.log("Documento creado con éxito:", resultado);
       res.status(201).json(resultado);
   } catch (error) {

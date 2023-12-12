@@ -13,7 +13,7 @@ const userSchema = new Schema(
         date: String,
         done: {
             type: Boolean,
-            default: false,
+            default: true,
         },
     },
     {
